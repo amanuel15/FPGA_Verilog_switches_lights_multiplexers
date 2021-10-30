@@ -1,0 +1,331 @@
+|part5
+SW[0] => SW[0].IN5
+SW[1] => SW[1].IN5
+SW[2] => SW[2].IN5
+SW[3] => SW[3].IN5
+SW[4] => SW[4].IN5
+SW[5] => SW[5].IN5
+SW[6] => SW[6].IN5
+SW[7] => SW[7].IN5
+SW[8] => SW[8].IN5
+SW[9] => SW[9].IN5
+SW[10] => SW[10].IN5
+SW[11] => SW[11].IN5
+SW[12] => SW[12].IN5
+SW[13] => SW[13].IN5
+SW[14] => SW[14].IN5
+SW[15] => SW[15].IN5
+SW[16] => SW[16].IN5
+SW[17] => SW[17].IN5
+HEX4[0] <= char_7seg:h4.port1
+HEX4[1] <= char_7seg:h4.port1
+HEX4[2] <= char_7seg:h4.port1
+HEX4[3] <= char_7seg:h4.port1
+HEX4[4] <= char_7seg:h4.port1
+HEX4[5] <= char_7seg:h4.port1
+HEX4[6] <= char_7seg:h4.port1
+HEX3[0] <= char_7seg:h3.port1
+HEX3[1] <= char_7seg:h3.port1
+HEX3[2] <= char_7seg:h3.port1
+HEX3[3] <= char_7seg:h3.port1
+HEX3[4] <= char_7seg:h3.port1
+HEX3[5] <= char_7seg:h3.port1
+HEX3[6] <= char_7seg:h3.port1
+HEX2[0] <= char_7seg:h2.port1
+HEX2[1] <= char_7seg:h2.port1
+HEX2[2] <= char_7seg:h2.port1
+HEX2[3] <= char_7seg:h2.port1
+HEX2[4] <= char_7seg:h2.port1
+HEX2[5] <= char_7seg:h2.port1
+HEX2[6] <= char_7seg:h2.port1
+HEX1[0] <= char_7seg:h1.port1
+HEX1[1] <= char_7seg:h1.port1
+HEX1[2] <= char_7seg:h1.port1
+HEX1[3] <= char_7seg:h1.port1
+HEX1[4] <= char_7seg:h1.port1
+HEX1[5] <= char_7seg:h1.port1
+HEX1[6] <= char_7seg:h1.port1
+HEX0[0] <= char_7seg:h0.port1
+HEX0[1] <= char_7seg:h0.port1
+HEX0[2] <= char_7seg:h0.port1
+HEX0[3] <= char_7seg:h0.port1
+HEX0[4] <= char_7seg:h0.port1
+HEX0[5] <= char_7seg:h0.port1
+HEX0[6] <= char_7seg:h0.port1
+
+
+|part5|mux_3bit_5to1:m4
+S[0] => Equal0.IN2
+S[0] => Equal1.IN0
+S[0] => Equal2.IN2
+S[0] => Equal3.IN1
+S[1] => Equal0.IN1
+S[1] => Equal1.IN2
+S[1] => Equal2.IN0
+S[1] => Equal3.IN0
+S[2] => Equal0.IN0
+S[2] => Equal1.IN1
+S[2] => Equal2.IN1
+S[2] => Equal3.IN2
+U[0] => M.DATAB
+U[1] => M.DATAB
+U[2] => M.DATAB
+V[0] => M.DATAB
+V[1] => M.DATAB
+V[2] => M.DATAB
+W[0] => M.DATAB
+W[1] => M.DATAB
+W[2] => M.DATAB
+X[0] => M.DATAB
+X[1] => M.DATAB
+X[2] => M.DATAB
+Y[0] => M.DATAA
+Y[1] => M.DATAA
+Y[2] => M.DATAA
+M[0] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[1] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[2] <= M.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|mux_3bit_5to1:m3
+S[0] => Equal0.IN2
+S[0] => Equal1.IN0
+S[0] => Equal2.IN2
+S[0] => Equal3.IN1
+S[1] => Equal0.IN1
+S[1] => Equal1.IN2
+S[1] => Equal2.IN0
+S[1] => Equal3.IN0
+S[2] => Equal0.IN0
+S[2] => Equal1.IN1
+S[2] => Equal2.IN1
+S[2] => Equal3.IN2
+U[0] => M.DATAB
+U[1] => M.DATAB
+U[2] => M.DATAB
+V[0] => M.DATAB
+V[1] => M.DATAB
+V[2] => M.DATAB
+W[0] => M.DATAB
+W[1] => M.DATAB
+W[2] => M.DATAB
+X[0] => M.DATAB
+X[1] => M.DATAB
+X[2] => M.DATAB
+Y[0] => M.DATAA
+Y[1] => M.DATAA
+Y[2] => M.DATAA
+M[0] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[1] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[2] <= M.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|mux_3bit_5to1:m2
+S[0] => Equal0.IN2
+S[0] => Equal1.IN0
+S[0] => Equal2.IN2
+S[0] => Equal3.IN1
+S[1] => Equal0.IN1
+S[1] => Equal1.IN2
+S[1] => Equal2.IN0
+S[1] => Equal3.IN0
+S[2] => Equal0.IN0
+S[2] => Equal1.IN1
+S[2] => Equal2.IN1
+S[2] => Equal3.IN2
+U[0] => M.DATAB
+U[1] => M.DATAB
+U[2] => M.DATAB
+V[0] => M.DATAB
+V[1] => M.DATAB
+V[2] => M.DATAB
+W[0] => M.DATAB
+W[1] => M.DATAB
+W[2] => M.DATAB
+X[0] => M.DATAB
+X[1] => M.DATAB
+X[2] => M.DATAB
+Y[0] => M.DATAA
+Y[1] => M.DATAA
+Y[2] => M.DATAA
+M[0] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[1] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[2] <= M.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|mux_3bit_5to1:m1
+S[0] => Equal0.IN2
+S[0] => Equal1.IN0
+S[0] => Equal2.IN2
+S[0] => Equal3.IN1
+S[1] => Equal0.IN1
+S[1] => Equal1.IN2
+S[1] => Equal2.IN0
+S[1] => Equal3.IN0
+S[2] => Equal0.IN0
+S[2] => Equal1.IN1
+S[2] => Equal2.IN1
+S[2] => Equal3.IN2
+U[0] => M.DATAB
+U[1] => M.DATAB
+U[2] => M.DATAB
+V[0] => M.DATAB
+V[1] => M.DATAB
+V[2] => M.DATAB
+W[0] => M.DATAB
+W[1] => M.DATAB
+W[2] => M.DATAB
+X[0] => M.DATAB
+X[1] => M.DATAB
+X[2] => M.DATAB
+Y[0] => M.DATAA
+Y[1] => M.DATAA
+Y[2] => M.DATAA
+M[0] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[1] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[2] <= M.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|mux_3bit_5to1:m0
+S[0] => Equal0.IN2
+S[0] => Equal1.IN0
+S[0] => Equal2.IN2
+S[0] => Equal3.IN1
+S[1] => Equal0.IN1
+S[1] => Equal1.IN2
+S[1] => Equal2.IN0
+S[1] => Equal3.IN0
+S[2] => Equal0.IN0
+S[2] => Equal1.IN1
+S[2] => Equal2.IN1
+S[2] => Equal3.IN2
+U[0] => M.DATAB
+U[1] => M.DATAB
+U[2] => M.DATAB
+V[0] => M.DATAB
+V[1] => M.DATAB
+V[2] => M.DATAB
+W[0] => M.DATAB
+W[1] => M.DATAB
+W[2] => M.DATAB
+X[0] => M.DATAB
+X[1] => M.DATAB
+X[2] => M.DATAB
+Y[0] => M.DATAA
+Y[1] => M.DATAA
+Y[2] => M.DATAA
+M[0] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[1] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[2] <= M.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|char_7seg:h4
+sw[0] => Equal0.IN2
+sw[0] => Equal1.IN0
+sw[0] => Equal2.IN2
+sw[0] => Equal3.IN1
+sw[1] => Equal0.IN1
+sw[1] => Equal1.IN2
+sw[1] => Equal2.IN0
+sw[1] => Equal3.IN0
+sw[2] => Equal0.IN0
+sw[2] => Equal1.IN1
+sw[2] => Equal2.IN1
+sw[2] => Equal3.IN2
+hex[0] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|char_7seg:h3
+sw[0] => Equal0.IN2
+sw[0] => Equal1.IN0
+sw[0] => Equal2.IN2
+sw[0] => Equal3.IN1
+sw[1] => Equal0.IN1
+sw[1] => Equal1.IN2
+sw[1] => Equal2.IN0
+sw[1] => Equal3.IN0
+sw[2] => Equal0.IN0
+sw[2] => Equal1.IN1
+sw[2] => Equal2.IN1
+sw[2] => Equal3.IN2
+hex[0] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|char_7seg:h2
+sw[0] => Equal0.IN2
+sw[0] => Equal1.IN0
+sw[0] => Equal2.IN2
+sw[0] => Equal3.IN1
+sw[1] => Equal0.IN1
+sw[1] => Equal1.IN2
+sw[1] => Equal2.IN0
+sw[1] => Equal3.IN0
+sw[2] => Equal0.IN0
+sw[2] => Equal1.IN1
+sw[2] => Equal2.IN1
+sw[2] => Equal3.IN2
+hex[0] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|char_7seg:h1
+sw[0] => Equal0.IN2
+sw[0] => Equal1.IN0
+sw[0] => Equal2.IN2
+sw[0] => Equal3.IN1
+sw[1] => Equal0.IN1
+sw[1] => Equal1.IN2
+sw[1] => Equal2.IN0
+sw[1] => Equal3.IN0
+sw[2] => Equal0.IN0
+sw[2] => Equal1.IN1
+sw[2] => Equal2.IN1
+sw[2] => Equal3.IN2
+hex[0] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|char_7seg:h0
+sw[0] => Equal0.IN2
+sw[0] => Equal1.IN0
+sw[0] => Equal2.IN2
+sw[0] => Equal3.IN1
+sw[1] => Equal0.IN1
+sw[1] => Equal1.IN2
+sw[1] => Equal2.IN0
+sw[1] => Equal3.IN0
+sw[2] => Equal0.IN0
+sw[2] => Equal1.IN1
+sw[2] => Equal2.IN1
+sw[2] => Equal3.IN2
+hex[0] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+
+
